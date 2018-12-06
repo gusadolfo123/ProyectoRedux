@@ -1,0 +1,9 @@
+
+Componentes Instalados
+ng g c footer --spec=false -is
+ng g c todo --spec=false -is
+ng g c todo/todos-list --spec=false -is
+ng g c todo/todo-item --spec=false -is
+ng g c todo/todo-footer --spec=false -is
+ng g c todo/todo-add --spec=false -is
+
