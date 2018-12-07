@@ -13,6 +13,8 @@ import {TodoAddComponent} from './todo/todo-add/todo-add.component';
 import {StoreModule} from '@ngrx/store';
 import {todoReducer} from './todo/todo.reducer';
 
+import {ReactiveFormsModule} from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,11 +25,7 @@ import {todoReducer} from './todo/todo.reducer';
     TodoItemComponent,
     TodoAddComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    StoreModule.forRoot({todos: todoReducer}),
-  ],
+  imports: [BrowserModule, AppRoutingModule, StoreModule.forRoot({todos: todoReducer}), ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

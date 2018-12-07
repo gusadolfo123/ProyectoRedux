@@ -1,11 +1,11 @@
 import {Action} from '@ngrx/store';
 
-export enum ActionTypes {
+export enum TodoActionTypes {
   AgregarTODO = '[TODO] AgregarTODO',
 }
 
 export class AgregarTODOAction implements Action {
-  readonly type = ActionTypes.AgregarTODO;
+  readonly type = TodoActionTypes.AgregarTODO;
 
   constructor(public texto: string) {}
 }
