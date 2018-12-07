@@ -10,6 +10,8 @@ import {TodoFooterComponent} from './todo/todo-footer/todo-footer.component';
 import {TodoItemComponent} from './todo/todo-item/todo-item.component';
 import {TodoAddComponent} from './todo/todo-add/todo-add.component';
 
+import {StoreModule} from '@ngrx/store';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,7 @@ import {TodoAddComponent} from './todo/todo-add/todo-add.component';
     TodoItemComponent,
     TodoAddComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, StoreModule.forRoot({})],
   providers: [],
   bootstrap: [AppComponent],
 })
