@@ -11,6 +11,7 @@ import {TodoItemComponent} from './todo/todo-item/todo-item.component';
 import {TodoAddComponent} from './todo/todo-add/todo-add.component';
 
 import {StoreModule} from '@ngrx/store';
+import {todoReducer} from './todo/todo.reducer';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,11 @@ import {StoreModule} from '@ngrx/store';
     TodoItemComponent,
     TodoAddComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, StoreModule.forRoot({})],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    StoreModule.forRoot({todos: todoReducer}),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
