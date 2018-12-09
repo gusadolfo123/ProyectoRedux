@@ -7,3 +7,4 @@ ng g c todo/todo-item --spec=false -is
 ng g c todo/todo-footer --spec=false -is
 ng g c todo/todo-add --spec=false -is
 
+crear pipe ng g p filter/filterPipe --spec=false -is
